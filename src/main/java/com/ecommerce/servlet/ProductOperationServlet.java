@@ -83,7 +83,7 @@ public class ProductOperationServlet extends HttpServlet {
 			    List<Product> product=new ProductDaoImp().getProductByCategory(categoryId);
 			    for(Product p:product)
 			    {
-			    	  File f=new File("C:\\admin\\webapp\\productImages\\"+p.getProductPhoto());
+			    	  File f=new File("C:\\ecommerce\\webapp\\productImages\\"+p.getProductPhoto());
 					
 					  f.delete();
 					  
@@ -133,10 +133,9 @@ public class ProductOperationServlet extends HttpServlet {
 			}
 		}
 		
-		
-		
-		
-		
+
+
+
 			
 	}
 
@@ -184,7 +183,7 @@ public class ProductOperationServlet extends HttpServlet {
 			
 			String fileName=part.getSubmittedFileName();
 			
-			String uploadPath="C:\\admin\\webapp\\productImages\\"+fileName;
+			String uploadPath="C:\\ecommerce\\webapp\\productImages\\"+fileName;
 			
 			try
 			{
