@@ -141,7 +141,7 @@ public class OrderDaoImp implements OrderDao
 	}
 
 	@Override
-	public boolean addDeliveryDate(int orderId, int userId,int productId, String deliveyrDate)
+	public boolean addDeliveryDate(int orderId, int userId,int productId, String deliveryDate)
 	{
         Connection con=DBUtility.getConnection();
 		
@@ -149,7 +149,7 @@ public class OrderDaoImp implements OrderDao
 		try 
 		{
 			stmt=con.prepareStatement(query);
-			stmt.setString(1,deliveyrDate);
+			stmt.setString(1, deliveryDate);
 			stmt.setInt(2,orderId);
 			stmt.setInt(3,userId);
 			stmt.setInt(4,productId);

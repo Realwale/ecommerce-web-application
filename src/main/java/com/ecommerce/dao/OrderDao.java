@@ -10,6 +10,6 @@ public interface OrderDao
     public List<Order> getOrderByUserId(int userId);
     public List<Order> getAllOrder();
     public int totalOrderPrice(int userId);
-    boolean addDeliveryDate(int orderId,int userId,int productId,String deliveyrDate);
+    boolean addDeliveryDate(int orderId,int userId,int productId,String deliveryDate);
     int totalOrdersCount();
 }

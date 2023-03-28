@@ -41,7 +41,7 @@ public class OrderServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//doGet(request, response);
+		doGet(request, response);
 		String action=request.getParameter("action");
 		HttpSession session=request.getSession();
 		
@@ -76,7 +76,7 @@ public class OrderServlet extends HttpServlet {
 		    }
 		        cd.deleteCartByUserId(userId);
 		        totalBill=od.totalOrderPrice(userId);
-				session.setAttribute("message","<span>Selected Products ordered successfully. Your Total Bill is Rs."+totalBill+"</span>");
+				session.setAttribute("message","<span>Selected Products ordered successfully. Your Total Bill is:"+" &#8358 "+totalBill+"</span>");
 		        response.sendRedirect("index.jsp");
 	       
 			
@@ -90,7 +90,7 @@ public class OrderServlet extends HttpServlet {
 			int orderId=Integer.parseInt(request.getParameter("orderId"));
 			
 			boolean flag=new OrderDaoImp().addDeliveryDate(orderId, userId, productId, deliveryDate);
-			if(flag==true)
+			if(flag)
 		    {
 		    	session.setAttribute("message","Delivery Date  Added Successfully!");
 		        response.sendRedirect("index.jsp");

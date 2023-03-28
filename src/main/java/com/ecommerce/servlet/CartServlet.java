@@ -119,7 +119,7 @@ public class CartServlet extends HttpServlet {
 				Cart cart=new Cart(userId,productId,finalQuantity,pricee);
 				boolean flag=new CartDaoImp().updateCart(cart);
 				
-				if(flag==true)
+				if(flag)
 			    {
 			    	session.setAttribute("message","Product Added to Cart Successfully..!");
 			        response.sendRedirect("index.jsp");

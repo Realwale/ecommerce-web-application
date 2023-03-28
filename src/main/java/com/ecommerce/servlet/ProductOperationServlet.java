@@ -52,7 +52,7 @@ public class ProductOperationServlet extends HttpServlet {
 			int productId=Integer.parseInt(request.getParameter("productId"));
 			Product product=new ProductDaoImp().getProductById(productId);
 			String productImage=product.getProductPhoto();
-			File f=new File("C:\\admin\\webapp\\productImages\\"+productImage);
+			File f=new File("C:\\ecommerce\\webapp\\productImages\\"+productImage);
 			
 			  f.delete();
 			 
