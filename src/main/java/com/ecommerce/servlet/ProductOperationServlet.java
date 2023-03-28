@@ -60,7 +60,7 @@ public class ProductOperationServlet extends HttpServlet {
 			boolean flag=false;
 			
 			flag=new ProductDaoImp().deleteProductById(productId);
-			if(flag==true)
+			if(flag)
 			{
 				session.setAttribute("message","Product Deleted Successfully..!");
 		        response.sendRedirect("index.jsp"); 	
@@ -206,7 +206,7 @@ public class ProductOperationServlet extends HttpServlet {
 			ProductDaoImp pdao=new ProductDaoImp();
 			boolean flag=pdao.addProduct(product);
 			
-			if(flag==true)
+			if(flag)
 		    {
 		    	session.setAttribute("message","Product Added Successfully..!");
 		        response.sendRedirect("admin.jsp");

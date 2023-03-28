@@ -87,8 +87,8 @@
                                  <h4 class="card-text"><%=product.getProductDescription() %></h4> 
                         </div>
                         <div class="card-footer text-center">
-                                 <p style="font-size:35px"><span style="font-size:35px;"><b>Price :</b></span><span class="ml-2"><b>&#8377;<%=Helper.getProductSellingPrice(product.getProductPrice(), product.getProductDiscount()) %>/-</b></span>
-                                 <span class="ml-2" style="font-size:30px;color:red"><s>&#8377;<%=product.getProductPrice()%></s></span>
+                                 <p style="font-size:35px"><span style="font-size:35px;"><b>Price :</b></span><span class="ml-2"><b>&#8358;<%=Helper.getProductSellingPrice(product.getProductPrice(), product.getProductDiscount()) %>/-</b></span>
+                                 <span class="ml-2" style="font-size:30px;color:red"><s>&#8358;<%=product.getProductPrice()%></s></span>
                                   <span class="ml-2" style="font-size:25px;color:green"><%=product.getProductDiscount() %>&#37 off</span>
                                   <span class="ml-5" style="font-size:22px;">Stock :</span>
                                   <span class="ml-1" style="font-size:20px"><%if(product.getProductQuantity()<1){ %><span style="color:red;"><b><%=stock%></b></span><%} else{ %><%=product.getProductQuantity()%><% } %></span>
@@ -192,8 +192,8 @@
                                  <p class="card-text"><%=Helper.get10Words(p.getProductDescription()) %></p> 
                              </div>
                              <div class="card-footer text-center">
-                                 <p style="font-size:25px"><span class="ml-2"><b>&#8377;<%=Helper.getProductSellingPrice(p.getProductPrice(), p.getProductDiscount()) %>/-</b></span>
-                                  <span class="ml-2" style="font-size:20px;color:red"><s>&#8377;<%=p.getProductPrice()%></s></span>
+                                 <p style="font-size:25px"><span class="ml-2"><b>&#8358;<%=Helper.getProductSellingPrice(p.getProductPrice(), p.getProductDiscount()) %>/-</b></span>
+                                  <span class="ml-2" style="font-size:20px;color:red"><s>&#8358;<%=p.getProductPrice()%></s></span>
                                   <span class="ml-2" style="font-size:20px;color:green"><%=p.getProductDiscount() %>&#37 off</span>
                                  </p>
                                  <span class="ml-2" style="font-size:20px;">Stock :</span>

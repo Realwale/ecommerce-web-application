@@ -129,8 +129,8 @@
                                  <p class="card-text"><%=Helper.get10Words(p.getProductDescription()) %></p> 
                              </div>
                              <div class="card-footer text-center">
-                                 <p style="font-size:25px"><span class="ml-2"><b>&#8377;<%=Helper.getProductSellingPrice(p.getProductPrice(), p.getProductDiscount()) %>/-</b></span>
-                                 <span class="ml-2" style="font-size:20px;color:red"><s>&#8377;<%=p.getProductPrice()%></s></span>
+                                 <p style="font-size:25px"><span class="ml-2"><b>&#8358;<%=Helper.getProductSellingPrice(p.getProductPrice(), p.getProductDiscount()) %>/-</b></span>
+                                 <span class="ml-2" style="font-size:20px;color:red"><s>&#8358;<%=p.getProductPrice()%></s></span>
                                   <span class="ml-2" style="font-size:20px;color:green"><%=p.getProductDiscount() %>&#37 off</span>
                                  </p>
                                   <span class="ml-2" style="font-size:20px;">Stock :</span>

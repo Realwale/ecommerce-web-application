@@ -372,6 +372,7 @@
       <td class="mid-align"><%=p.getProductPrice() %></td>
       <td class="mid-align"><%=p.getProductDiscount() %></td>
       <td class="mid-align"><%=p.getProductQuantity() %></td>
+        <td class="mid-align"><a href="ProductOperationServlet?productId=<%=p.getProductId()%>&action=delete"><input type="submit" class="btn btn-danger" value="Delete"></a></td>
     </tr>
     <%
       }

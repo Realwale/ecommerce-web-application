@@ -266,7 +266,7 @@
 <hr>
 
 <div class="text-right">
-    <p style="font-size:25px;"><b>Total Price :&#8377;<%=new CartDaoImp().totalPriceFromCart(user.getUserId()) %>/- </b></p> 
+    <p style="font-size:25px;"><b>Total Price :&#8358;<%=new CartDaoImp().totalPriceFromCart(user.getUserId()) %>/- </b></p>
 </div>
 <hr>
 <div class="row">
@@ -376,7 +376,7 @@
 <hr>
 
 <div class="text-right">
-    <p style="font-size:25px;"><b>Total Price :&#8377;<%=new OrderDaoImp().totalOrderPrice(user.getUserId()) %>/- </b></p> 
+    <p style="font-size:25px;"><b>Total Price :&#8358;<%=new OrderDaoImp().totalOrderPrice(user.getUserId()) %>/- </b></p>
 </div>
 <hr>
 
